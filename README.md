@@ -15,4 +15,4 @@ NASA hackathon in Sillicon Valley
 
 #### bower install
 
-#### open in browser examples/extra.html
+#### open in browser view.htm
