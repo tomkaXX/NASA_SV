@@ -7,6 +7,8 @@
     jQuery.noConflict();
   </script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+
   <link type="text/css" rel="stylesheet" href="../bower_components/rickshaw/rickshaw.min.css" >
 
   <link type="text/css" rel="stylesheet" href="../bower_components/rickshaw/examples/css/extensions.css?v=2">
@@ -24,7 +26,57 @@
 </head>
 <body>
 
+
+<div class="container">
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div id="dash_controller">
+        <h3>Controls</h3>
+        <table>
+          <tr>
+          <td>
+          Water<input id="range1" type="range" min="0" max="100" value="0" step="5"  /><span id="range1">0</span>
+          </td>
+          </tr>
+          <tr>
+            <td>
+            Oxygen<input id="range2" type="range" min="0" max="100" value="0" step="5" />
+            <span id="range2">0</span></td>
+          </tr>
+          <tr>
+            <td>
+            CO2<input id="range3" type="range" min="0" max="100" value="0" step="5"  />
+            <span id="range3">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Temperature<input id="range4" type="range" min="0" max="100" value="0" step="5" /><span id="range4">0</span>
+            </td>
+          </tr>
+        </table>
+        </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <img height="300px" width="300px" src="../gameInterface/img/CornField.jpg" alt="picture of your plant">
+    </div>
+
+
+    <div class="col-sm-4">
+      <img id="flash_animation" src="#" alt="">
+    </div>
+
+
+  </div>
+</div>
+
 <div id="content">
+
+
 
   <form id="side_panel">
     <h1>Sensor Data from SeedStar</h1>
@@ -97,6 +149,8 @@
   </div>
 
 </div>
+
+<script src="../gameInterface/game.js"></script>
 
 <script>
 
@@ -278,6 +332,8 @@ setInterval(function(){
   })
 }, 3000);
 </script>
+
+
 
 </body>
 
