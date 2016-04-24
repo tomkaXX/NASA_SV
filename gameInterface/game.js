@@ -17,11 +17,33 @@ $(document).on('ready', function(){
 var slideListener = function(event){
   var new_value = (this.value);
   console.log(this.id)
+  var range = this.id
   var output_selection= $("span#" + this.id);
   console.log("this is the output")
   console.log(output_selection);
   console.log(output_selection[0].innerHTML);
   output_selection[0].innerHTML = new_value +"%";
+  animate(range);
 
+}
 
+var animate = function(rangeString){
+  var animation_area = $("img#flash_animation")[0]
+  if(rangeString=="range1"){
+    console.log(animation_area);
+    animation_area.src = "./img/CornField.jpg";
+  }
+  else if(rangeString=="range2"){
+
+  }
+  else if(rangeString=="range3"){
+
+  }
+  else if(rangeString=="range4"){
+
+  }
+  else{
+    console.log("not in ragne");
+  }
+  console.log(rangeString);
 }
