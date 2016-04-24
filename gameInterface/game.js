@@ -31,19 +31,19 @@ var animate = function(rangeString){
   var animation_area = $("img#flash_animation")[0]
   if(rangeString=="range1"){
     console.log(animation_area);
-    animation_area.src = "./img/water.jpeg";
+    animation_area.src = "./gameInterface/img/water.jpeg";
   }
   else if(rangeString=="range2"){
-    animation_area.src = "./img/Plants_release_oxygen.jpg";
+    animation_area.src = "./gameInterface/img/Plants_release_oxygen.jpg";
 
   }
   else if(rangeString=="range3"){
 
-    animation_area.src = "./img/Plants_release_oxygen.jpg";
+    animation_area.src = "./gameInterface/img/Plants_release_oxygen.jpg";
   }
   else if(rangeString=="range4"){
 
-    animation_area.src = "./img/plant_temp.jpeg";
+    animation_area.src = "./gameInterface/img/plant_temp.jpeg";
   }
   else{
     console.log("not in range");
