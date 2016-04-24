@@ -1,4 +1,9 @@
 /* line 5, ../sass/style.scss */
+
+#dash_controller{
+  color: "white";
+}
+
 body {
   margin: 0px;
   background: url("../img/spaice.png") repeat scroll 0% 0% transparent;
@@ -22,6 +27,8 @@ body {
   float: left;
   margin-top: 0px;
 }
+
+
 
 /* line 30, ../sass/style.scss */
 .bigSector1 {
